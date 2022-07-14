@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    display: flex;
+    flex-direction: column;
 }
 ol, ul {
 	list-style: none;
@@ -51,8 +53,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 160px;
-    border-bottom: 1px solid black;
+    padding: 20px 300px;
 }
 .header-logo {
     font-weight: 900;
@@ -71,31 +72,38 @@ ul {
     list-style-type: none;
     gap: 20px;
 }
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .sectionA {
     width: 100%;
     height: 500px;
     background-color: #1f2937;
     display: flex;
-    justify-content: center;
-    padding: 120px 160px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 300px;
     box-sizing: border-box;
-    gap: 800px;
+    /* gap: 800px; */
+    /* gap: 50px; */
 }
 .img {
-    background-color: #E5E7EB;
-    width: 400px;
-    height: 200px;
+    background-color: gray;
+    width: 550px;
+    height: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+color: #E5E7EB;}
+
 .sectionA .text {
-    width: 500px;
+    width: 550px;
     height: 200px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: baseline;
     align-items: baseline;
-    gap: 15px;
+    gap: 15px; */
 }
 .sectionA h1 {
     color: white;
@@ -105,8 +113,9 @@ ul {
 }
 .sectionA p {
     color: #E5E7EB;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 18px;
+    padding: 10px 0;
 }
 .sectionA button {
     background-color: #3882F6;
@@ -116,4 +125,113 @@ ul {
     border: none;
     border-radius: 10%;
     
+}
+.sectionB {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.sectionB h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+.sectionB .info {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.sectionB .infimg {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882F6;
+    border-radius: 10%;
+}
+.sectionB .infobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sectionB .infcap {
+    width: 200px;
+}
+.sectionC {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: #E5E7EB;
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionC .quote {
+    font-weight: lighter;
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.sectionC .credit {
+    font-weight: bolder;
+    color: black;
+    font-size: 28px;
+    text-align: end;
+}
+.sectionD {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionD .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #3882F6;
+    width: 60%;
+    height: 43%;
+    padding: 40px 120px;
+}
+.sectionD h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.sectionD p {
+    font-size: 15px;
+    color: #E5E7EB;
+    font-weight: 400;
+}
+.sectionD button {
+    color:#E5E7EB;
+    background-color: #3882F6;
+    border: 1px solid #E5E7EB;
+    padding: 10px 50px;
+    transition: all 0.25s;
+}
+.sectionD button:hover {
+    background-color: #E5E7EB;
+    color: #3882F6;
+}
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #1f2937;
+    padding: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
 }
